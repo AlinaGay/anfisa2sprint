@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Category',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True,
+                serialize=False, verbose_name='ID')),
                 ('is_published', models.BooleanField(default=True)),
                 ('title', models.CharField(max_length=256)),
                 ('slug', models.SlugField(max_length=64, unique=True)),
